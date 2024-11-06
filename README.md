@@ -61,33 +61,60 @@ Key analysis and visualization includes
   group by SubscriptionType
   order by Customer_Count desc
   ```
-  - Find customers who canceled their subscription within 6 months.
+ - Find customers who canceled their subscription within 6 months.
     ```SQL
     select top 10 *
     from [dbo].[Customer subscription data]
     ```
     
-   ```SQL
+  ```SQL
   select
-   CustomerName,
-   Subscription_Start,
-   Subscription_End
-   from[dbo].[Customer subscription data]
-   where
-   Cancelled = 'TRUE'
-   ```
+  CustomerName,
+  Subscription_Start,
+  Subscription_End
+  from[dbo].[Customer subscription data]
+  where
+  Cancelled = 'TRUE'
+  ```
 
   ```SQL
   select
-   CustomerName,
-   Subscription_Start,
-   Subscription_End
-   from
-   [dbo].[Customer subscription data]
-   where
+  CustomerName,
+  Subscription_Start,
+  Subscription_End
+  from
+  [dbo].[Customer subscription data]
+  where
   cancelled = 'TRUE'
   and Datediff(month,
   Subscription_Start, Subscription_End) <= 6
+  ```
+- Calculate the average subscription duration for all customers.
+  ```SQL
+  select
+  AVG(DATEDIFF(day,
+  try_cast(Subscription_Start as date), try_cast(Subscription_End as date))) as 
+  Average_Subscription_Duration
+  from
+  [dbo].[Customer subscription data]
+  where
+  Subscription_Start is not null and Subscription_End is not null
+  ```
+- Find customers with subscriptions longer than 12 months.
+  ```SQL
+  select
+  CustomerID,
+  CustomerName,
+  Subscription_Start,
+  Subscription_End,
+  datediff(month,
+  try_cast(Subscription_Start as Date), try_cast(Subscription_End as Date)) as 
+  Subscription_Duration_Months
+  from
+  [dbo].[Customer subscription data]
+  where
+  datediff(month,
+  try_cast(Subscription_Start as Date), try_cast(Subscription_End as Date)) > 12;
   ```
 4. PowerBI
 
