@@ -1,15 +1,18 @@
 # LITA_PROJECT2: SUBSCRIPTION_DATA
 SUBSCRIPTION DATA
----
+
 ## OVERVIEW
+---
 The project involves analysing subscription data to understand customer trends, retention rates, and other key performannce indicators. 
 
 ## AIM
+---
 This analysis aims at:
 - Providing insights into subscriber behaviours
 - Identify areas for potential growth
 
 ## DATA DESCRIPTION
+---
 The dataseet include the following on subscribers, their subscription plans, and their engagement with the service. Key columns in the data includes:
 - CustomerID: Unique idedntifier for each customer
 - Subscription_Start_Date: Date the customer's started their subscription
@@ -17,6 +20,7 @@ The dataseet include the following on subscribers, their subscription plans, and
 - Subscription_Plan: The type of plan the custmer subscribed to.
 
 ## OBJECTIVES 
+---
 The primary objectives of this analysis are 
 1. Customer Retention: Analysing retention rates to understand how long customer stayed subscribed
 2. Churn Analysis: Identify possible reasons why customer stopped using a subscription type
@@ -24,12 +28,14 @@ The primary objectives of this analysis are
 4. Engagements Trends: Observing usage pattern across various customer segements
 
 ## DATA CLEANING 
+---
 To ensure data quality, the following cleaning steps was carefully observed 
 - Handling Missing Values: The data was critically observed for missing values
 - Removed Duplicates: Duplicate entries were carefully checked for
 - Outlier Detection: I carefully checked out for unusual values in Subscription duration
 
 ## EXPLORATORY DATA ANALYSIS (EDA)
+---
 Key analysis and visualization includes 
 - Sum Of Revenue by Region: Clustered Column Chart was used to find the sum of revenue gotten from each region
 - Sum of Revenues: The card chart was used to show the total sum of revenue gotten from the period of time
@@ -40,10 +46,12 @@ Key analysis and visualization includes
 - Retention_Rate: Retention rate was also displayed using a card chart
 
 ## INSIGHT AND FINDINGS
+---
 
 - High retention by subscription type: More persons subscribed to the basic subscription type with 10 customers in total, 7 returned and 3 cancelled, which means high retention rate was find in the basic subscripton type.
 
 ## TOOLS 
+---
 1. Excel: Pivot table was used to gain insight
     
 2. SQL
@@ -192,6 +200,7 @@ Key analysis and visualization includes
     
 
 ## Visualization
+---
 ![LITA Capstone Dataset_-27027859 - Excel 11_6_2024 6_52_04 PM](https://github.com/user-attachments/assets/a5ba759f-361a-45ca-9edd-c86cefe97910)
 ![PROJECT 2  SUBSCRIPTION DATA 11_6_2024 6_51_36 PM](https://github.com/user-attachments/assets/9807a71c-37ec-4015-8578-4253848a07f0)
 
