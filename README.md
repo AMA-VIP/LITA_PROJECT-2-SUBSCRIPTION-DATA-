@@ -38,4 +38,7 @@ Key analysis and visualization includes
 - Total_Number_of_Customer: The total number of customer was displayed using a card Chart
 - Cancelled_Subscription: Cancelled subscription was displayed using a card chart
 - Retention_Rate: Retention rate was also displayed using a card chart
+
+## Insight and Findings 
+- High retention by subscription type: More persons subscribed to the basic subscription type with 10 customers in total, 7 returned and 3 cancelled, which means high retention rate was find in the basic subscripton type. 
   
