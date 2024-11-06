@@ -33,5 +33,9 @@ To ensure data quality, the following cleaning steps was carefully observed
 Key analysis and visualization includes 
 - Sum Of Revenue by Region: Clustered Column Chart was used to find the sum of revenue gotten from each region
 - Sum of Revenues: The card chart was used to show the total sum of revenue gotten from the period of time
-- 
-
+- Count of CustomerID by Cancelled: this was used to analyse the churn rate - the percentage of customers who cancelled their subscriptions (FALSE) 
+- Subscription_Type by Revenue: Table was used to show the Subscription Type and revnue gotten from each subscription type.
+- Total_Number_of_Customer: The total number of customer was displayed using a card Chart
+- Cancelled_Subscription: Cancelled subscription was displayed using a card chart
+- Retention_Rate: Retention rate was also displayed using a card chart
+  
