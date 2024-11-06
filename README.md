@@ -116,6 +116,44 @@ Key analysis and visualization includes
   datediff(month,
   try_cast(Subscription_Start as Date), try_cast(Subscription_End as Date)) > 12;
   ```
+
+- Calculate total revenue by subscription type.
+  ```SQL
+  select
+  SubscriptionType,
+  sum(try_cast(Revenue As decimal(10,2))) as Total_Revenue
+  from
+  [dbo].[Customer subscription data]
+  group by 
+  SubscriptionType
+  ```
+- Find the top 3 regions by subscription cancellations.
+  ```SQL
+  select
+  Region,
+  count (*) as Cancellation
+  from
+  [dbo].[Customer subscription data]
+  where
+  Cancelled = 'TRUE'
+  group by 
+  Region
+  order by 
+  Cancellation desc
+  ```
+
+- find the total number of active and canceled subscriptions.
+  ```SQL
+  select
+  count(case when cancelled = 
+  'FALSE' then 1 end) as
+  Active_Subscriptions,
+  count(case when cancelled =
+  'TRUE' then 1 end) as Cancelled_Subscriptions
+  from
+  [dbo].[Customer subscription data]
+  ```
+
 4. PowerBI
 
   
