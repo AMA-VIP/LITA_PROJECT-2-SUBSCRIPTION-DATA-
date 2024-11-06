@@ -173,7 +173,7 @@ Key analysis and visualization includes
     [Total_Customers], 0)
     ```
 
--Calculate Cancelled Customer 
+- Calculate Cancelled Customer 
 
    ```PowerBI
    Cancelled_Customer = CALCULATE(
