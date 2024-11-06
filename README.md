@@ -154,6 +154,23 @@ Key analysis and visualization includes
   [dbo].[Customer subscription data]
   ```
 
-4. PowerBI
+4. PowerBI: More measures were created to find more insights on total number of customers, cancelled customers that stopped subscriptions, and retention rates. The following queries 
+   were used to create the following measures.
+   
+- To calculate the total number of returning customers
+  
+     ```PowerBI
+     Returning_Customers = calculate(
+     DISTINCTCOUNT('Customer subscription data'[CustomerID]),
+     FILTER('Customer subscription data', 'Customer subscription data'[Cancelled] = FALSE)
+     )
+     ```
+- Calculate Retenton Rate
+  ```PowerBI
+  Retention_Rate =
+  DIVIDE([Returing_Customer],
+  [Total_Customers], 0)
+  ```
+    
 
   
