@@ -39,6 +39,20 @@ Key analysis and visualization includes
 - Cancelled_Subscription: Cancelled subscription was displayed using a card chart
 - Retention_Rate: Retention rate was also displayed using a card chart
 
-## Insight and Findings 
-- High retention by subscription type: More persons subscribed to the basic subscription type with 10 customers in total, 7 returned and 3 cancelled, which means high retention rate was find in the basic subscripton type. 
+## INSIGHT AND FINDINGS
+
+- High retention by subscription type: More persons subscribed to the basic subscription type with 10 customers in total, 7 returned and 3 cancelled, which means high retention rate was find in the basic subscripton type.
+
+## TOOLS 
+1. Excel: Pivot table was used to gain insight
+    
+2. SQL
+- Retrieve the total number of customers from each region. 
+   ```SQL
+   select Region, count(distinct customerID) as Total_Customers
+   from [dbo].[Customer subscription data]
+   group by Region
+   ```
+4. PowerBI
+
   
