@@ -1,4 +1,4 @@
-# LITA_PROJECT-2-SUBSCRIPTION-DATA-
+# LITA_PROJECT2: SUBSCRIPTION-DATA-
 SUBSCRIPTION DATA
 
 ## OVERVIEW
@@ -53,6 +53,42 @@ Key analysis and visualization includes
    from [dbo].[Customer subscription data]
    group by Region
    ```
+- Find the most popular subscription type by the number of customers.
+  ```SQL
+  select top 1  SubscriptionType,
+  count (distinct CustomerID) as Customer_Count
+  from [dbo].[Customer subscription data]
+  group by SubscriptionType
+  order by Customer_Count desc
+  ```
+  - Find customers who canceled their subscription within 6 months.
+    ```SQL
+    select top 10 *
+    from [dbo].[Customer subscription data]
+    ```
+    
+   ```SQL
+  select
+   CustomerName,
+   Subscription_Start,
+   Subscription_End
+   from[dbo].[Customer subscription data]
+   where
+   Cancelled = 'TRUE'
+   ```
+
+  ```SQL
+  select
+   CustomerName,
+   Subscription_Start,
+   Subscription_End
+   from
+   [dbo].[Customer subscription data]
+   where
+  cancelled = 'TRUE'
+  and Datediff(month,
+  Subscription_Start, Subscription_End) <= 6
+  ```
 4. PowerBI
 
   
