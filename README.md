@@ -29,5 +29,7 @@ To ensure data quality, the following cleaning steps was carefully observed
 - Removed Duplicates: Duplicate entries were carefully checked for
 - Outlier Detection: I carefully checked out for unusual values in Subscription duration
 
-## 
+## EXPLORATORY DATA ANALYSIS (EDA)
+Key analysis and visualization includes 
+- Sum Of Revenue by Region: Clustered Column Chart was used to find the sum of revenue gotten from each region
 
