@@ -181,7 +181,14 @@ Key analysis and visualization includes
   'Customer subscription data'[Cancelled] = TRUE
    )
   ```
-  
+
+- Calculate the Churn_Rate
+
+   ```PowerBI
+   Churn_Rate =
+   DIVIDE([Cancelled_Customer],
+   [Total_Customers], 0)
+   ```
     
 
   
