@@ -21,4 +21,13 @@ The primary objectives of this analysis are
 1. Customer Retention: Analysing retention rates to understand how long customer stayed subscribed
 2. Churn Analysis: Identify possible reasons why customer stopped using a subscription type
 3. Revenue Insights: Understanding the revenue contributions from different subscription plans, and different region
-4. 
+4. Engagements Trends: Observing usage pattern across various customer segements
+
+## DATA CLEANING 
+To ensure data quality, the following cleaning steps was carefully observed 
+- Handling Missing Values: The data was critically observed for missing values
+- Removed Duplicates: Duplicate entries were carefully checked for
+- Outlier Detection: I carefully checked out for unusual values in Subscription duration
+
+## 
+
