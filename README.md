@@ -1,4 +1,4 @@
-# LITA_PROJECT2: SUBSCRIPTION-DATA-
+# LITA_PROJECT2: SUBSCRIPTION_DATA
 SUBSCRIPTION DATA
 
 ## OVERVIEW
@@ -166,11 +166,22 @@ Key analysis and visualization includes
      )
      ```
 - Calculate Retenton Rate
-  ```PowerBI
-  Retention_Rate =
-  DIVIDE([Returing_Customer],
-  [Total_Customers], 0)
+  
+    ```PowerBI
+    Retention_Rate =
+    DIVIDE([Returing_Customer],
+    [Total_Customers], 0)
+    ```
+
+-Calculate Cancelled Customer 
+
+   ```PowerBI
+   Cancelled_Customer = CALCULATE(
+   DISTINCTCOUNT('Customer subscription data'[CustomerID]),
+  'Customer subscription data'[Cancelled] = TRUE
+   )
   ```
+  
     
 
   
